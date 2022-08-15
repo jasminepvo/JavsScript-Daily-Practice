@@ -1,6 +1,6 @@
 # CodeWars - [LIVE STATS AND SOLUTIONS](https://www.codewars.com/users/jasminepvo/stats)
 
-![Codewars](https://github.r2v.ch/codewars?user=jasminepvo&stroke=%23BB432C)
+![Codewars](https://github.r2v.ch/codewars?user=jasminepvo&stroke=%23BB432C)<br>
 A repository filled with codewars challenges (kata).
 GOAL: Rank #1304 on the global leaderboard, Completed over 1000+ challenges and push 7 solutions every week.
 
