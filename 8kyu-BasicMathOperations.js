@@ -24,4 +24,4 @@ function basicOp(operation, value1, value2) {
 }
 
 //Solve time: 6min9sec
-//Don't forget to use ==, not =
+//Don't forget to use ==, not = to assign
