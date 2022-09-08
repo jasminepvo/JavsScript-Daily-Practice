@@ -34,3 +34,12 @@ function past(h, m, s) {
 past(1, 1, 1);
 
 //Solve time: 5minutes
+
+//Refactored solution
+const past = (h, m, s) => {
+	return (
+		h.map((h) => h * (3.6 * Math.pow(10, 6))) +
+		m.map((m) => m * 60000) +
+		s.map((s) => s * 1000)
+	);
+};
