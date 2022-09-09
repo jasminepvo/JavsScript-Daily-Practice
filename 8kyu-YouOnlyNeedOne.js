@@ -8,3 +8,7 @@ Return true if the array contains the value, false if not.
 
 FUNDAMENTALSSTRINGSARRAYS
 */
+
+function check(a, x) {
+	a.map((num) => (num == x ? true : false));
+}
