@@ -10,5 +10,5 @@ FUNDAMENTALSSTRINGSARRAYS
 */
 
 function check(a, x) {
-	a.map((num) => (num == x ? true : false));
+	return a.includes(x) ? true : false;
 }
