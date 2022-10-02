@@ -17,3 +17,8 @@ const quarterOf = (month) => {
 		return 4;
 	}
 };
+
+//Solve time 5min
+
+//Refactored solution
+const quarterOf = (m) => Math.ceil(m / 3);
