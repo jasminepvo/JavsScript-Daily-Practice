@@ -11,6 +11,6 @@ Note: for the purposes of this kata you will assume that it is a square if its l
 FUNDAMENTALS
 */
 
-const areaOrPerimeter = function (l, w) {
-	return l === w ? l * w : 2 * (l + w);
-};
+const areaOrPerimeter = (l, w) => (l === w ? l * w : 2 * (l + w));
+
+//Refactored solve time: 20sec
