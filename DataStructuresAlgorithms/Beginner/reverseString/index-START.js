@@ -4,7 +4,12 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 */
 
 function reverseString(text) {
-	return [...text].reverse().join("");
+	let result = "";
+
+	for (let i = text.length - 1; i >= 0; i--) {
+		result += text[i];
+	}
+	return result;
 }
 
 module.exports = reverseString;
