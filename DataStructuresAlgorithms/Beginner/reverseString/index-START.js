@@ -6,8 +6,8 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 function reverseString(text) {
 	let result = "";
 
-	for (let i = text.length - 1; i >= 0; i--) {
-		result += text[i];
+	for (let char of text) {
+		result = char + result;
 	}
 	return result;
 }
