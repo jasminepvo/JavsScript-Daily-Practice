@@ -4,7 +4,7 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 */
 
 function reverseString(text) {
-	return text.split("").reverse().join("");
+	return [...text].reverse().join("");
 }
 
 module.exports = reverseString;
