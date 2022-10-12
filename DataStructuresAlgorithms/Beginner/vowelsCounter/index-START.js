@@ -3,18 +3,15 @@ Given a string of text, return the number of vowels found within the text
 e.g vowelsCounter('anehizxcv') // will return 3
 */
 
-const vowels = ["a", "e", "i", "o", "u"];
-
 function vowelsCounter(text) {
-	let counter = 0;
+	// whatever you're looking for goes inside / / then g stands for global search, which means that after finding the first match, it will not start over from the beginning but continue searching from the end of the previous match. i stands for case insensitive search so /xyz/ would match XyZ
+	let matchingInstances = text.match(/[aeiou]/gi);
 
-	for (let letter of text.toLowerCase()) {
-		if (vowels.includes(letter)) {
-			counter++;
-		}
+	if (matchingInstances) {
+		return matchingInstances.length;
+	} else {
+		return 0;
 	}
-
-	return counter;
 }
 
 module.exports = vowelsCounter;
