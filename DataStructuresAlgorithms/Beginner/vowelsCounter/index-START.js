@@ -7,6 +7,7 @@ function vowelsCounter(text) {
 	// whatever you're looking for goes inside / / then g stands for global search, which means that after finding the first match, it will not start over from the beginning but continue searching from the end of the previous match. i stands for case insensitive search so /xyz/ would match XyZ
 	let matchingInstances = text.match(/[aeiou]/gi);
 
+	//matchingInstances evaluates to a truth value meaning an array of matches is found
 	if (matchingInstances) {
 		return matchingInstances.length;
 	} else {
