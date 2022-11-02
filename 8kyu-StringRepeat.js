@@ -12,3 +12,7 @@ function repeatStr(n, s) {
 }
 
 //Solve time: 3min
+
+const repeatStr = (n, s) => s.repeat(n);
+
+//Refactored solution: 10sec
