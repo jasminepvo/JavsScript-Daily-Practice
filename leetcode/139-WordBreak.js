@@ -9,7 +9,7 @@ Note that the same word in the dictionary may be reused multiple times in the se
  * @param {string[]} wordDict
  * @return {boolean}
  */
-function wordB(s, wordDict) {
+function wordBreak(s, wordDict) {
   //PREP
   //parameter
   //s = applepie
@@ -65,6 +65,6 @@ function wordB(s, wordDict) {
 //Time: O(n^3)
 
 //Example
-const s = "applepie";
-const wordDict = ["apple", "pie"];
-console.log(wordBreak(s, wordDict), true); // Expected output: true
+console.log(wordBreak("leetcode", ["leet", "code"])); // Expected output: true
+console.log(wordBreak("applepenapple", ["apple", "pen"])); // Expected output: true
+console.log(wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"])); // Expected output: false
