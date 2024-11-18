@@ -1,0 +1,14 @@
+# Ignore package lock files (depending on your preference)
+package-lock.json
+yarn.lock
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore compiled JavaScript files
+*.js.map
+
+# Ignore OS-specific files
+.DS_Store # macOS
+Thumbs.db # Windows
