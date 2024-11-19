@@ -24,7 +24,7 @@ function uniqueOccurrences(arr) {
 }
 
 //Time: O(n)
-//Space: O(1)
+//Space: O(n)
 
 console.log(uniqueOccurrences([1, 2, 2, 1, 1, 3])); //true
 console.log(uniqueOccurrences([1,2])) //false
