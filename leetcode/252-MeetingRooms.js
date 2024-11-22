@@ -1,18 +1,19 @@
 //Given an array of meeting time interval objects consisting of start and end times [[start_1,end_1],[start_2,end_2],...] (start_i < end_i), determine if a person could add all meetings to their schedule without any conflicts.
 
 function canAttendMeetings(intervals) {
-  //if the start time of next index is greater than the
+  //if the start time of next index is less than the
   //end time of the first index
   //then it overlaps so return false
 
-  intervals.sort((a, b) => a.start - b.start);
+  intervals.sort((a, b) => a[0] - b[0]);
 
   for (let i = 1; i < intervals.length; i++) {
-    if (intervals[i].start < intervals[i - 1].end) {
+    if (intervals[i][0] < intervals[i - 1][1]) {
       return false;
     }
+    return true;
   }
-  return true;
+  
 }
 
 //Time: O(nlogn)
