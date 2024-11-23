@@ -90,3 +90,17 @@ function MaxAvailSlots(appts) {
 }
 
 console.log(MaxAvailSlots(appts));
+
+/*
+Parameters - array of objects
+Return - max num of avail time slots
+Example -
+|9:15|
+Pseudocode -
+initialize a counter to store the result
+figure out the end time by adding the duration to the start time
+convert the time into minutes
+60 / 30 = 2 
+fixedStart = 9:00 
+fixedEnd = 17:00
+*/
