@@ -7,11 +7,27 @@
  * @param {string} word2
  * @return {string}
  */
-var mergeAlternately = function(word1, word2) {
-    // P - two strings
-    // R - merge the strings alternating from 1 char from each string at a time
-    // E - word1 = "ab", word2 = "pqrs"
-    /* 
+var mergeAlternately = function (word1, word2) {
+  let maxLength = Math.max(word1.length, word2.length);
+  let mergedString = "";
+
+  for (let i = 0; i < maxLength; i++) {
+    if (i < word1.length) {
+      mergedString += word1[i];
+    }
+    if (i < word2.length) {
+      mergedString += word2[i];
+    }
+  }
+  return mergedString;
+};
+
+//Nov 18, 2024
+/*
+P - two strings
+R - merge the strings alternating from 1 char from each string at a time
+E - word1 = "ab", word2 = "pqrs"
+    
     Iteration 1:
     word1 = b
     word2 = pqrs 
@@ -41,7 +57,6 @@ var mergeAlternately = function(word1, word2) {
     word1 = 
     word2 =  
     result = apbqrs
-    */
 
     // P - 
     // so we see that the number of iterations will be the total sum of char from both string
@@ -52,24 +67,25 @@ var mergeAlternately = function(word1, word2) {
     // if the index is less than word1.length, add the char
     // if the index is less than word2.length, add the char
     // return the string
+    
+*/
 
-    let maxLength = Math.max(word1.length, word2.length)
-    let mergedString = ""
-
-    for (let i=0; i<maxLength; i++) {
-        if (i < word1.length) {
-            mergedString += word1[i]
-        }
-        if (i < word2.length) {
-            mergedString += word2[i]
-        }
-    }
-    return mergedString
-};
+//Jan 2, 2025
+/*
+P - two strings, could be different lengths but less than 100 char per word, all lowercase letters
+R - string merged together alternatively
+E - word1 = "abc", word2 = "dfg", mergedString = "adbfcg" | word1 = "a", word2 = "bbc", mergedString = "abbc"
+P - create a variable that contains an empty string where we will store the mergedString result in
+  - create a variable that contains the maxLength between the two strings to determine the loop num
+  - loop through until maxLength
+  - if index < word1.length, += the letter to add to mergedString
+  - if index < word2.length, += the letter to add to mergedString
+  - exit the loop, return the result
+*/
 
 //Time: O(n)
 //Space: O(n+m)
 
-console.log(mergeAlternately("abc", "pqr")) //apbqcr
-console.log(mergeAlternately("ab", "pqrs")) //apbqrs
-console.log(mergeAlternately("abcd", "pq")) //apbqcd
+console.log(mergeAlternately("abc", "pqr")); //apbqcr
+console.log(mergeAlternately("ab", "pqrs")); //apbqrs
+console.log(mergeAlternately("abcd", "pq")); //apbqcd
